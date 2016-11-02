@@ -14,7 +14,12 @@ mod1 = Extension(
     'rocksdb._rocksdb',
     sources,
     extra_compile_args=[
+        #'-std=c++0x',
+        #'-stdlib=libc++',
+        #'-mmacosx-version-min=10.10',
         '-std=c++11',
+        '-stdlib=libc++',
+        '-mmacosx-version-min=10.10',
         '-O3',
         '-Wall',
         '-Wextra',
